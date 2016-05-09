@@ -20,3 +20,6 @@ h2 {
 p,ul,li,td {
  color: black; 
  }
+#can {
+	border:solid 2px;
+}
