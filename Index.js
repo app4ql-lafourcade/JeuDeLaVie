@@ -8,15 +8,16 @@
         function anime() {
 			var timer = document.getElementById('timer').value ;
 			var nb = document.getElementById('nb').value ;
+			var color = document.getElementById('color').value ;
 			var taille = document.getElementById('taille').value ;
 			console.log("a");
-            context.fillStyle = "green";
+            context.fillStyle = color;
             context.clearRect(0, 0, canvas.width, canvas.height);
             for (i=0; i<nb; i++) {
                 for (j=0; j<nb; j++) {
                     if (Math.random() > 0.9) {
                         a[i*nb+j] = 1;
-                        context.fillStyle = "green";
+                        context.fillStyle = color;
                     } else {
                         a[i*nb+j] = 0;
                         context.fillStyle = "red";
